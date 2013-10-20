@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>What Can I Take</title>
+			<link rel="stylesheet" href="prereqs.css" />
+			
+		</head>
+
+		<body>
+			<div id="credits"> Created by: <a href="http://web.engr.illinois.edu/~ptgibbo2/">Paul Gibbons</a></div>
+		<div id="top">
+			<h1 class="clearBoth"> Please check all classes that you have taken </h1>
+		</div>
+		
+			<form id="classForm">
+				
+				<div id="cs100level" class="column">
+					<h3> 100 level </h3>
+					<!-- basic = cs 101, cs 103, cs 125, ece 190 -->
+					<label>
+						<input type="checkbox" name="100" value="cs100"> 
+						CS 100 : Freshman Orientation
+					</label>
+					<label>
+						<input type="checkbox" name="101" value="cs101"> 
+						CS 101 : Intro Computing: Engrg &amp; Sci 	(AP Comp Sci)
+					</label>
+					<label>
+						<input type="checkbox" name="102" value="cs102"> 
+						CS 102 : Little Bits to Big Ideas
+					</label>
+					<label>
+						<input type="checkbox" name="103" value="cs103"> 
+						CS 103 : Introduction to Programming
+					</label>
+					<label>
+						<input type="checkbox" name="105" value="cs105"> 
+						CS 105 : Intro Computing: Non-Tech
+					</label>
+					<label>
+						<input type="checkbox" name="125" value="cs125"> 
+						CS 125 : Intro to Computer Science
+					</label>
+					<label>
+						<input type="checkbox" name="173" value="cs173"> 
+						CS 173 : Discrete Structures
+					</label>
+					<label>
+						<input type="checkbox" name="196" value="cs196"> 
+						CS 196 : Freshman Honors
+					</label>
+					<label>
+						<input type="checkbox" name="199" value="cs199"> 
+						CS 199 : Ungergraduate Open Seminar
+					</label>
+				</div>
+				
+				<div id="cs200level" class="column">
+					<h3> 200 level </h3>
+					<!-- basic = cs 101, cs 103, cs 125, ece 190 -->
+					<label>
+						<input type="checkbox" name="210" value="cs210"> 
+						CS 210 : Ethics & Professional Issues
+					</label>
+					<label>
+						<input type="checkbox" name="225" value="cs225"> 
+						CS 225 : Data Structures
+					</label>
+					<label>
+						<input type="checkbox" name="231" value="cs231"> 
+						CS 231 : Computer Architecture I
+					</label>
+					<label>
+						<input type="checkbox" name="232" value="cs232"> 
+						CS 232 : Computer Architecture II
+					</label>
+					<label>
+						<input type="checkbox" name="241" value="cs241"> 
+						CS 241 : System Programming
+					</label>
+					<label>
+						<input type="checkbox" name="242" value="cs242"> 
+						CS 242 : Programming Studio
+					</label>
+					<label>
+						<input type="checkbox" name="296" value="cs296"> 
+						CS 296 : Honors Course
+					</label>
+				</div>
+				
+				<div id="cs300level" class="column">
+					<h3> 300 level </h3>
+					<label>
+						<input type="checkbox" name="357" value="cs357"> 
+						CS 357: Numerical Methods I
+					</label>
+					<label>
+						<input type="checkbox" name="373" value="cs373"> 
+						CS 373 : Theory of Comptation
+					</label>
+					<label>
+						<input type="checkbox" name="397" value="cs397"> 
+						CS 397 : Individual Studies
+					</label>
+					<label>
+						<input type="checkbox" name="398" value="cs398"> 
+						CS 398 : Special Topics
+					</label>
+				</div>
+				
+				<div id="yearInSchool" class="column">
+					<h3> Next Semester Year in School </h3>
+					<label>
+						<input type="radio" name="yr" value="freshman"> 
+						Freshman
+					</label>
+					<label>
+						<input type="radio" name="yr" value="sophomore"> 
+						Sophomore
+					</label>
+					<label>
+						<input type="radio" name="yr" value="junior"> 
+						Junior
+					</label>
+					<label>
+						<input type="radio" name="yr" value="senior"> 
+						Senior
+					</label>
+					<label>
+						<input type="radio" name="yr" value="grad">
+						Graduate Student
+					</label>
+				</div>
+				
+				<div id="math" class="column">
+					<h3> Mathmatics </h3>
+					<label>
+						<input type="checkbox" name="m3yrs" value="easyMath"> 
+						Three+ years of highschool math
+					</label>
+					<label>
+						<input type="checkbox" name="m012" value="easyMath"> 
+						Math 012
+					</label>
+					<label>
+						<input type="checkbox" name="m213" value="cs173"> 
+						Math 213 : Basic Discrete Mathematics
+					</label>
+					<label>
+						<input type="checkbox" name="m220" value="math220"> 
+						Math 220 : Calculus
+					</label>
+					<label>
+						<input type="checkbox" name="m221" value="math220"> 
+						Math 221 : Calculus I (AP Calc AB/BC)
+					</label>
+					<label>
+						<input type="checkbox" name="m225" value="math415"> 
+						Math 225 : Introductory Matrix Theory
+					</label>
+					<label>
+						<input type="checkbox" name="m241" value="math241"> 
+						Math 241 : Calculus III
+					</label>
+					<label>
+						<input type="checkbox" name="m415" value="math415"> 
+						Math 415 : Applied Linear Algerbra
+					</label>
+				</div>
+				
+				<div class="clearBoth">
+
+				<input type="submit" value="Calculate" id="submitButton">
+				</div>
+			</form>
+			<div>
+				<h1 id="answers">
+					Here is what you can take
+				</h1>
+			</div>
+
+			<div id="oq" class="result">
+				Classes you are overqualified for:<br><br>
+			</div>
+			
+			<div id="good" class="result">
+				Classes you can take:<br><br>
+			</div>
+			
+			<div id="bad" class="result">
+				Classes you do not have the necessary prerequisites for:<br><br>
+			</div>
+			
+		</body>
+		<script src="jquery-2.0.3.min.js"></script>
+		<script src="prereqs.js"></script>
+</html>
+
+
+
+
+
+
